@@ -1,0 +1,15 @@
+{
+  "originHash" : "d7d94000e6b770d586405dce885cbad7ce88a2d52c111c3c9d56aa0f070d1e7d",
+  "pins" : [
+    {
+      "identity" : "spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitlab.com/connect2x/trixnity-messenger/spm.git",
+      "state" : {
+        "revision" : "66dda79beecd003eeb01bc1a3cb04e60654db522",
+        "version" : "3.5.4-alpha.40071040"
+      }
+    }
+  ],
+  "version" : 3
+}

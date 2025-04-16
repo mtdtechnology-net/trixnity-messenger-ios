@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B38A8B82DAE8B390099F319 /* StateFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38A8B72DAE8B300099F319 /* StateFlow.swift */; };
+		1B38A8BA2DAE8B7A0099F319 /* TaskCancellation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38A8B92DAE8B700099F319 /* TaskCancellation.swift */; };
+		1B38A8BE2DAE8BF40099F319 /* TimCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38A8BD2DAE8BEA0099F319 /* TimCoordinator.swift */; };
+		1B38A8C22DAE8D4F0099F319 /* CancellationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38A8C12DAE8D460099F319 /* CancellationExtension.swift */; };
+		1B38A8C42DAE8DE30099F319 /* OptionalStateFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38A8C32DAE8DE10099F319 /* OptionalStateFlow.swift */; };
+		1B38A8C72DAE91600099F319 /* StartupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38A8C62DAE915C0099F319 /* StartupView.swift */; };
+		1B38A8CE2DAE945D0099F319 /* RootViewModelWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38A8CC2DAE945C0099F319 /* RootViewModelWrapper.swift */; };
+		1B38A8D22DAE953D0099F319 /* LoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38A8D12DAE95380099F319 /* LoadView.swift */; };
+		1B38A8ED2DAEA3FB0099F319 /* MainViewModelWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38A8EC2DAEA3FA0099F319 /* MainViewModelWrapper.swift */; };
+		1B38A8F02DAEA9FE0099F319 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38A8EF2DAEA9F90099F319 /* LoginViewModel.swift */; };
+		1B38A8F32DAEB2550099F319 /* AddMatrixAccountViewModelWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38A8F22DAEB2540099F319 /* AddMatrixAccountViewModelWrapper.swift */; };
+		1B38A8F52DAEB5350099F319 /* RootViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38A8F42DAEB5340099F319 /* RootViewWrapper.swift */; };
+		1B38A8F92DAEB9EC0099F319 /* RoomListElementViewModelWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38A8F82DAEB9EB0099F319 /* RoomListElementViewModelWrapper.swift */; };
+		1B38A8FC2DAEBE220099F319 /* RoomListViewModelWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38A8FB2DAEBE210099F319 /* RoomListViewModelWrapper.swift */; };
+		1B38A8FF2DAEC3340099F319 /* SyncOverlayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38A8FE2DAEC32A0099F319 /* SyncOverlayViewModel.swift */; };
+		2152B1FD2CFF274400BBBAA7 /* TrixnityMessenger in Frameworks */ = {isa = PBXBuildFile; productRef = 2152B1FC2CFF274400BBBAA7 /* TrixnityMessenger */; };
+		219A538E2C85A745009C91D5 /* Trixnity_Messenger_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A538D2C85A745009C91D5 /* Trixnity_Messenger_iOSApp.swift */; };
+		219A53922C85A746009C91D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 219A53912C85A746009C91D5 /* Assets.xcassets */; };
+		219A53952C85A746009C91D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 219A53942C85A746009C91D5 /* Preview Assets.xcassets */; };
+		219A539E2C85A78E009C91D5 /* RoomListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A539D2C85A78E009C91D5 /* RoomListView.swift */; };
+		219A53A02C85B232009C91D5 /* RoomListElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A539F2C85B232009C91D5 /* RoomListElementView.swift */; };
+		219A53A52C85DFB3009C91D5 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A53A42C85DFB3009C91D5 /* RootView.swift */; };
+		219A53AB2C85E24D009C91D5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A53AA2C85E24D009C91D5 /* MainView.swift */; };
+		219A53AD2C85E31E009C91D5 /* SyncOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A53AC2C85E31E009C91D5 /* SyncOverlayView.swift */; };
+		219A53AF2C85E3FC009C91D5 /* AddMatrixAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A53AE2C85E3FC009C91D5 /* AddMatrixAccountView.swift */; };
+		219A53B42C85E958009C91D5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A53B32C85E958009C91D5 /* LoginView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B38A8B72DAE8B300099F319 /* StateFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateFlow.swift; sourceTree = "<group>"; };
+		1B38A8B92DAE8B700099F319 /* TaskCancellation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCancellation.swift; sourceTree = "<group>"; };
+		1B38A8BD2DAE8BEA0099F319 /* TimCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimCoordinator.swift; sourceTree = "<group>"; };
+		1B38A8C12DAE8D460099F319 /* CancellationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellationExtension.swift; sourceTree = "<group>"; };
+		1B38A8C32DAE8DE10099F319 /* OptionalStateFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalStateFlow.swift; sourceTree = "<group>"; };
+		1B38A8C62DAE915C0099F319 /* StartupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupView.swift; sourceTree = "<group>"; };
+		1B38A8CC2DAE945C0099F319 /* RootViewModelWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModelWrapper.swift; sourceTree = "<group>"; };
+		1B38A8D12DAE95380099F319 /* LoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadView.swift; sourceTree = "<group>"; };
+		1B38A8EC2DAEA3FA0099F319 /* MainViewModelWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelWrapper.swift; sourceTree = "<group>"; };
+		1B38A8EF2DAEA9F90099F319 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		1B38A8F22DAEB2540099F319 /* AddMatrixAccountViewModelWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMatrixAccountViewModelWrapper.swift; sourceTree = "<group>"; };
+		1B38A8F42DAEB5340099F319 /* RootViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewWrapper.swift; sourceTree = "<group>"; };
+		1B38A8F82DAEB9EB0099F319 /* RoomListElementViewModelWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListElementViewModelWrapper.swift; sourceTree = "<group>"; };
+		1B38A8FB2DAEBE210099F319 /* RoomListViewModelWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListViewModelWrapper.swift; sourceTree = "<group>"; };
+		1B38A8FE2DAEC32A0099F319 /* SyncOverlayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncOverlayViewModel.swift; sourceTree = "<group>"; };
+		219A538A2C85A745009C91D5 /* Trixnity-Messenger-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trixnity-Messenger-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		219A538D2C85A745009C91D5 /* Trixnity_Messenger_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trixnity_Messenger_iOSApp.swift; sourceTree = "<group>"; };
+		219A53912C85A746009C91D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		219A53942C85A746009C91D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		219A539D2C85A78E009C91D5 /* RoomListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListView.swift; sourceTree = "<group>"; };
+		219A539F2C85B232009C91D5 /* RoomListElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListElementView.swift; sourceTree = "<group>"; };
+		219A53A42C85DFB3009C91D5 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		219A53AA2C85E24D009C91D5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		219A53AC2C85E31E009C91D5 /* SyncOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncOverlayView.swift; sourceTree = "<group>"; };
+		219A53AE2C85E3FC009C91D5 /* AddMatrixAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMatrixAccountView.swift; sourceTree = "<group>"; };
+		219A53B32C85E958009C91D5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		219A53872C85A745009C91D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2152B1FD2CFF274400BBBAA7 /* TrixnityMessenger in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B38A8B52DAE8B220099F319 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1B38A8C32DAE8DE10099F319 /* OptionalStateFlow.swift */,
+				1B38A8C12DAE8D460099F319 /* CancellationExtension.swift */,
+				1B38A8B92DAE8B700099F319 /* TaskCancellation.swift */,
+				1B38A8B72DAE8B300099F319 /* StateFlow.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1B38A8B62DAE8B280099F319 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B38A8BC2DAE8BE30099F319 /* Setup */,
+				1B38A8B52DAE8B220099F319 /* Extensions */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B38A8BB2DAE8BD60099F319 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				1B38A8FD2DAEC3150099F319 /* Overlay */,
+				1B38A8F62DAEB9D30099F319 /* Room */,
+				1B38A8F12DAEB2350099F319 /* Method */,
+				1B38A8EE2DAEA9E20099F319 /* Login */,
+				1B38A8EB2DAEA3EF0099F319 /* Main */,
+				1B38A8D02DAE952F0099F319 /* Load */,
+				1B38A8CF2DAE94850099F319 /* Root */,
+				1B38A8C52DAE91550099F319 /* Startup */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		1B38A8BC2DAE8BE30099F319 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				1B38A8BD2DAE8BEA0099F319 /* TimCoordinator.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		1B38A8C52DAE91550099F319 /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				1B38A8C62DAE915C0099F319 /* StartupView.swift */,
+			);
+			path = Startup;
+			sourceTree = "<group>";
+		};
+		1B38A8CF2DAE94850099F319 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				1B38A8F42DAEB5340099F319 /* RootViewWrapper.swift */,
+				219A53A42C85DFB3009C91D5 /* RootView.swift */,
+				1B38A8CC2DAE945C0099F319 /* RootViewModelWrapper.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		1B38A8D02DAE952F0099F319 /* Load */ = {
+			isa = PBXGroup;
+			children = (
+				1B38A8D12DAE95380099F319 /* LoadView.swift */,
+			);
+			path = Load;
+			sourceTree = "<group>";
+		};
+		1B38A8EB2DAEA3EF0099F319 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1B38A8EC2DAEA3FA0099F319 /* MainViewModelWrapper.swift */,
+				219A53AA2C85E24D009C91D5 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1B38A8EE2DAEA9E20099F319 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1B38A8EF2DAEA9F90099F319 /* LoginViewModel.swift */,
+				219A53B32C85E958009C91D5 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		1B38A8F12DAEB2350099F319 /* Method */ = {
+			isa = PBXGroup;
+			children = (
+				1B38A8F22DAEB2540099F319 /* AddMatrixAccountViewModelWrapper.swift */,
+				219A53AE2C85E3FC009C91D5 /* AddMatrixAccountView.swift */,
+			);
+			path = Method;
+			sourceTree = "<group>";
+		};
+		1B38A8F62DAEB9D30099F319 /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				1B38A8FA2DAEBE130099F319 /* List */,
+				1B38A8F72DAEB9E00099F319 /* Element */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		1B38A8F72DAEB9E00099F319 /* Element */ = {
+			isa = PBXGroup;
+			children = (
+				1B38A8F82DAEB9EB0099F319 /* RoomListElementViewModelWrapper.swift */,
+				219A539F2C85B232009C91D5 /* RoomListElementView.swift */,
+			);
+			path = Element;
+			sourceTree = "<group>";
+		};
+		1B38A8FA2DAEBE130099F319 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				1B38A8FB2DAEBE210099F319 /* RoomListViewModelWrapper.swift */,
+				219A539D2C85A78E009C91D5 /* RoomListView.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		1B38A8FD2DAEC3150099F319 /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				1B38A8FE2DAEC32A0099F319 /* SyncOverlayViewModel.swift */,
+				219A53AC2C85E31E009C91D5 /* SyncOverlayView.swift */,
+			);
+			path = Overlay;
+			sourceTree = "<group>";
+		};
+		219A53812C85A745009C91D5 = {
+			isa = PBXGroup;
+			children = (
+				219A538C2C85A745009C91D5 /* Trixnity-Messenger-iOS */,
+				219A538B2C85A745009C91D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		219A538B2C85A745009C91D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				219A538A2C85A745009C91D5 /* Trixnity-Messenger-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		219A538C2C85A745009C91D5 /* Trixnity-Messenger-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1B38A8BB2DAE8BD60099F319 /* Pages */,
+				1B38A8B62DAE8B280099F319 /* Model */,
+				219A538D2C85A745009C91D5 /* Trixnity_Messenger_iOSApp.swift */,
+				219A53912C85A746009C91D5 /* Assets.xcassets */,
+				219A53932C85A746009C91D5 /* Preview Content */,
+			);
+			path = "Trixnity-Messenger-iOS";
+			sourceTree = "<group>";
+		};
+		219A53932C85A746009C91D5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				219A53942C85A746009C91D5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		219A53892C85A745009C91D5 /* Trixnity-Messenger-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 219A53982C85A746009C91D5 /* Build configuration list for PBXNativeTarget "Trixnity-Messenger-iOS" */;
+			buildPhases = (
+				219A53862C85A745009C91D5 /* Sources */,
+				219A53872C85A745009C91D5 /* Frameworks */,
+				219A53882C85A745009C91D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Trixnity-Messenger-iOS";
+			productName = "Trixnity-Messenger-iOS";
+			productReference = 219A538A2C85A745009C91D5 /* Trixnity-Messenger-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		219A53822C85A745009C91D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					219A53892C85A745009C91D5 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 219A53852C85A745009C91D5 /* Build configuration list for PBXProject "Trixnity-Messenger-iOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 219A53812C85A745009C91D5;
+			packageReferences = (
+				2152B1FB2CFF274400BBBAA7 /* XCRemoteSwiftPackageReference "spm" */,
+			);
+			productRefGroup = 219A538B2C85A745009C91D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				219A53892C85A745009C91D5 /* Trixnity-Messenger-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		219A53882C85A745009C91D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				219A53952C85A746009C91D5 /* Preview Assets.xcassets in Resources */,
+				219A53922C85A746009C91D5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		219A53862C85A745009C91D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B38A8CE2DAE945D0099F319 /* RootViewModelWrapper.swift in Sources */,
+				219A539E2C85A78E009C91D5 /* RoomListView.swift in Sources */,
+				1B38A8C42DAE8DE30099F319 /* OptionalStateFlow.swift in Sources */,
+				219A53AB2C85E24D009C91D5 /* MainView.swift in Sources */,
+				1B38A8F52DAEB5350099F319 /* RootViewWrapper.swift in Sources */,
+				1B38A8C72DAE91600099F319 /* StartupView.swift in Sources */,
+				1B38A8FF2DAEC3340099F319 /* SyncOverlayViewModel.swift in Sources */,
+				1B38A8F92DAEB9EC0099F319 /* RoomListElementViewModelWrapper.swift in Sources */,
+				219A53AF2C85E3FC009C91D5 /* AddMatrixAccountView.swift in Sources */,
+				219A53A02C85B232009C91D5 /* RoomListElementView.swift in Sources */,
+				1B38A8BE2DAE8BF40099F319 /* TimCoordinator.swift in Sources */,
+				219A53AD2C85E31E009C91D5 /* SyncOverlayView.swift in Sources */,
+				1B38A8BA2DAE8B7A0099F319 /* TaskCancellation.swift in Sources */,
+				219A53B42C85E958009C91D5 /* LoginView.swift in Sources */,
+				1B38A8D22DAE953D0099F319 /* LoadView.swift in Sources */,
+				1B38A8FC2DAEBE220099F319 /* RoomListViewModelWrapper.swift in Sources */,
+				219A538E2C85A745009C91D5 /* Trixnity_Messenger_iOSApp.swift in Sources */,
+				1B38A8C22DAE8D4F0099F319 /* CancellationExtension.swift in Sources */,
+				1B38A8F32DAEB2550099F319 /* AddMatrixAccountViewModelWrapper.swift in Sources */,
+				219A53A52C85DFB3009C91D5 /* RootView.swift in Sources */,
+				1B38A8B82DAE8B390099F319 /* StateFlow.swift in Sources */,
+				1B38A8ED2DAEA3FB0099F319 /* MainViewModelWrapper.swift in Sources */,
+				1B38A8F02DAEA9FE0099F319 /* LoginViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		219A53962C85A746009C91D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		219A53972C85A746009C91D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		219A53992C85A746009C91D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Trixnity-Messenger-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Connect2x.Trixnity-Messenger-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		219A539A2C85A746009C91D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Trixnity-Messenger-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Connect2x.Trixnity-Messenger-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		219A53852C85A745009C91D5 /* Build configuration list for PBXProject "Trixnity-Messenger-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				219A53962C85A746009C91D5 /* Debug */,
+				219A53972C85A746009C91D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		219A53982C85A746009C91D5 /* Build configuration list for PBXNativeTarget "Trixnity-Messenger-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				219A53992C85A746009C91D5 /* Debug */,
+				219A539A2C85A746009C91D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2152B1FB2CFF274400BBBAA7 /* XCRemoteSwiftPackageReference "spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/connect2x/trixnity-messenger/spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = "3.0.4-alpha.32178654";
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2152B1FC2CFF274400BBBAA7 /* TrixnityMessenger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2152B1FB2CFF274400BBBAA7 /* XCRemoteSwiftPackageReference "spm" */;
+			productName = TrixnityMessenger;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 219A53822C85A745009C91D5 /* Project object */;
+}
